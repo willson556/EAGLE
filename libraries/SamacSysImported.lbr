@@ -138,6 +138,29 @@
   <wire x2="-9.75" width="0.2" x1="-9.75" layer="21" y2="5.45" y1="5.45"/>
   <wire x2="-9.750" width="0.2" x1="-9.750" curve="-180.0" layer="21" y2="5.650" y1="5.450"/>
  </package>
+ <package name="EB2-5NU">
+  <description>&lt;b>EB2-NU&lt;/b>&lt;br>&#xd;
+</description>
+  <smd dx="2.94" rot="R90" x="-5.08" dy="1" name="1" layer="1" y="-4.78"/>
+  <smd dx="2.94" rot="R90" x="-2.54" dy="1" name="2" layer="1" y="-4.78"/>
+  <smd dx="2.94" rot="R90" x="0" dy="1" name="3" layer="1" y="-4.78"/>
+  <smd dx="2.94" rot="R90" x="2.54" dy="1" name="4" layer="1" y="-4.78"/>
+  <smd dx="2.94" rot="R90" x="5.08" dy="1" name="5" layer="1" y="-4.78"/>
+  <smd dx="2.94" rot="R90" x="5.08" dy="1" name="6" layer="1" y="4.78"/>
+  <smd dx="2.94" rot="R90" x="2.54" dy="1" name="7" layer="1" y="4.78"/>
+  <smd dx="2.94" rot="R90" x="0" dy="1" name="8" layer="1" y="4.78"/>
+  <smd dx="2.94" rot="R90" x="-2.54" dy="1" name="9" layer="1" y="4.78"/>
+  <smd dx="2.94" rot="R90" x="-5.08" dy="1" name="10" layer="1" y="4.78"/>
+  <text rot="R0" x="-0.326" size="1.27" layer="25" align="center" y="0.09">>NAME</text>
+  <text rot="R0" x="-0.326" size="1.27" layer="27" align="center" y="0.09">>VALUE</text>
+  <wire x2="7.15" width="0.254" x1="-7.15" layer="51" y2="4.65" y1="4.65"/>
+  <wire x2="7.15" width="0.254" x1="7.15" layer="51" y2="-4.65" y1="4.65"/>
+  <wire x2="-7.15" width="0.254" x1="7.15" layer="51" y2="-4.65" y1="-4.65"/>
+  <wire x2="-7.15" width="0.254" x1="-7.15" layer="51" y2="4.65" y1="-4.65"/>
+  <wire x2="-7.15" width="0.254" x1="-7.15" layer="21" y2="4.65" y1="-4.65"/>
+  <wire x2="7.15" width="0.254" x1="7.15" layer="21" y2="4.65" y1="-4.65"/>
+  <circle width="0.254" x="-5.084" layer="25" y="-7.202" radius="0.14135"/>
+ </package>
 </packages>
 <symbols>
  <symbol name="ESP32-WROOM-32U">
@@ -186,6 +209,24 @@
   <pin rot="R180" x="35.56" name="IO23" direction="io" length="middle" y="-40.64"/>
   <pin rot="R180" x="35.56" name="GND_3" direction="io" length="middle" y="-43.18"/>
   <pin rot="R180" x="35.56" name="GND_4" direction="io" length="middle" y="-45.72"/>
+ </symbol>
+ <symbol name="EB2-5NU">
+  <wire x2="50.8" width="0.254" x1="5.08" layer="94" y2="2.54" y1="2.54"/>
+  <wire x2="50.8" width="0.254" x1="50.8" layer="94" y2="2.54" y1="-12.7"/>
+  <wire x2="5.08" width="0.254" x1="50.8" layer="94" y2="-12.7" y1="-12.7"/>
+  <wire x2="5.08" width="0.254" x1="5.08" layer="94" y2="-12.7" y1="2.54"/>
+  <text x="52.07" size="1.778" layer="95" align="center-left" y="7.62">>NAME</text>
+  <text x="52.07" size="1.778" layer="96" align="center-left" y="5.08">>VALUE</text>
+  <pin rot="R0" x="0" name="COIL_+" direction="io" length="middle" y="0"/>
+  <pin rot="R0" x="0" name="NC_1" direction="io" length="middle" y="-2.54"/>
+  <pin rot="R0" x="0" name="COM_1" direction="io" length="middle" y="-5.08"/>
+  <pin rot="R0" x="0" name="NO_1" direction="io" length="middle" y="-7.62"/>
+  <pin rot="R0" x="0" name="NO_CONNECTION_1" direction="io" length="middle" y="-10.16"/>
+  <pin rot="R180" x="55.88" name="NO_CONNECTION_2" direction="io" length="middle" y="0"/>
+  <pin rot="R180" x="55.88" name="NO_2" direction="io" length="middle" y="-2.54"/>
+  <pin rot="R180" x="55.88" name="COM_2" direction="io" length="middle" y="-5.08"/>
+  <pin rot="R180" x="55.88" name="NC_2" direction="io" length="middle" y="-7.62"/>
+  <pin rot="R180" x="55.88" name="COIL_-" direction="io" length="middle" y="-10.16"/>
  </symbol>
 </symbols>
 <devicesets>
@@ -248,6 +289,41 @@ Source: &lt;a href="https://www.mouser.de/datasheet/2/891/esp32-wroom-32d_esp32-
       <attribute constant="no" name="RS_Price-Stock" value=""/>
       <attribute constant="no" name="Description" value="WiFi Modules (802.11) SMD Module, ESP32-D0WD, 32Mbits SPI flash, UART mode, U.FL antenna connector"/>
       <attribute constant="no" name="Height" value="3.1mm"/>
+     </technology>
+    </technologies>
+   </device>
+  </devices>
+ </deviceset>
+ <deviceset prefix="K" name="EB2-5NU">
+  <description>&lt;b>Miniature Signal Relay&lt;/b>&lt;p>&#xd;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/EB2-5NU.pdf"> Datasheet &lt;/a></description>
+  <gates>
+   <gate symbol="EB2-5NU" x="0" name="G$1" y="0"/>
+  </gates>
+  <devices>
+   <device name="" package="EB2-5NU">
+    <connects>
+     <connect pin="COIL_+" pad="1" gate="G$1"/>
+     <connect pin="NC_1" pad="2" gate="G$1"/>
+     <connect pin="COM_1" pad="3" gate="G$1"/>
+     <connect pin="NO_1" pad="4" gate="G$1"/>
+     <connect pin="NO_CONNECTION_1" pad="5" gate="G$1"/>
+     <connect pin="NO_CONNECTION_2" pad="6" gate="G$1"/>
+     <connect pin="NO_2" pad="7" gate="G$1"/>
+     <connect pin="COM_2" pad="8" gate="G$1"/>
+     <connect pin="NC_2" pad="9" gate="G$1"/>
+     <connect pin="COIL_-" pad="10" gate="G$1"/>
+    </connects>
+    <technologies>
+     <technology name="">
+      <attribute constant="no" name="Manufacturer_Name" value="TOKIN"/>
+      <attribute constant="no" name="Manufacturer_Part_Number" value="EB2-5NU"/>
+      <attribute constant="no" name="Mouser_Part_Number" value=""/>
+      <attribute constant="no" name="Mouser_Price-Stock" value=""/>
+      <attribute constant="no" name="RS_Part_Number" value=""/>
+      <attribute constant="no" name="RS_Price-Stock" value=""/>
+      <attribute constant="no" name="Description" value="Miniature Signal Relay"/>
+      <attribute constant="no" name="Height" value="mm"/>
      </technology>
     </technologies>
    </device>
