@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-04-21T02:41:50Z",
+        "CreationDate": "2019-04-21T05:24:54Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -18,7 +18,7 @@
         "Owner": "Thomas Willson <thomas.willson@me.com>",
         "Size": {
             "X": 81.915,
-            "Y": 35.56
+            "Y": 39.0525
         }
     }
 }
