@@ -52,3 +52,6 @@ eagle.epf
 
 # OS X
 .DS_Store
+
+# Gerber Zip Files
+CAMOutputs.zip
