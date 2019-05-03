@@ -8736,26 +8736,26 @@ If RTS is HIGH, toggling DTR from LOW to HIGH resets to bootloader.</text>
 </net>
 <net name="K1_CTRL" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="IO34"/>
-<wire x1="271.78" y1="144.78" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
-<label x="269.24" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="K1" gate="G$1" pin="CONTROL_+_1"/>
 <wire x1="30.48" y1="172.72" x2="25.4" y2="172.72" width="0.1524" layer="91"/>
 <label x="25.4" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO16"/>
+<wire x1="307.34" y1="142.24" x2="309.88" y2="142.24" width="0.1524" layer="91"/>
+<label x="309.88" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="K2_CTRL" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IO35"/>
-<wire x1="271.78" y1="142.24" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
-<label x="269.24" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="K1" gate="G$1" pin="CONTROL_+_2"/>
 <wire x1="30.48" y1="167.64" x2="25.4" y2="167.64" width="0.1524" layer="91"/>
 <label x="25.4" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO19"/>
+<wire x1="307.34" y1="132.08" x2="309.88" y2="132.08" width="0.1524" layer="91"/>
+<label x="309.88" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="K3_CTRL" class="0">
